@@ -7,10 +7,21 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "skipImport": true,
+          "changeDetection": "OnPush",
+          "standalone": true
         },
         "@schematics/angular:application": {
           "strict": true
+        },
+        "@schematics/angular:directive": {
+          "standalone": true,
+          "skipImport": true
+        },
+        "@schematics/angular:pipe": {
+          "standalone": true,
+          "skipImport": true
         }
       },
       "root": "",
@@ -28,9 +39,15 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@ant-design/icons-angular/src/inline-svg/",
+                "output": "/assets/"
+              }
             ],
             "styles": [
+              "src/theme.less",
               "src/styles.scss"
             ],
             "scripts": []

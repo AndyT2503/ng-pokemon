@@ -1,0 +1,22 @@
+<div nz-row>
+  <div class="img-container" nz-col nzSpan="8">
+    <img [src]="pokemon.sprites.front_shiny" [alt]="pokemon.name" />
+  </div>
+  <div class="detail" nz-col nzSpan="14">
+    <h3 class="name">{{ pokemon.name | uppercase }}</h3>
+    <div class="detail-infos">
+      <div class="info">
+        <h4>ID:</h4>
+        <p>{{ pokemon.id }}</p>
+      </div>
+      <div class="info">
+        <h4>Height:</h4>
+        <p>{{ pokemon.height }}</p>
+      </div>
+      <div class="info">
+        <h4>Weight:</h4>
+        <p>{{ pokemon.weight }}</p>
+      </div>
+    </div>
+  </div>
+</div>

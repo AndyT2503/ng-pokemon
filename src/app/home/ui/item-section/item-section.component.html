@@ -1,0 +1,12 @@
+<div class="header">
+  <h2>Items</h2>
+</div>
+
+<div class="list-item">
+  <ng-container *ngFor="let item of listItem">
+    <app-card
+      [cardItem]="item"
+      [cardItemImage]="item | imageUrl: DATA_TYPE.Item"
+    ></app-card>
+  </ng-container>
+</div>

@@ -1,0 +1,26 @@
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
+  width: 1200px;
+  .nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .nav-right {
+    margin-left: auto;
+    font-weight: 500;
+  }
+}
+
+
+:host::ng-deep .ant-menu-horizontal {
+  border-bottom: none;
+}
+

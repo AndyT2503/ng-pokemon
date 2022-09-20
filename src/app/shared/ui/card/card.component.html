@@ -1,0 +1,10 @@
+<nz-card (click)="clickItem()" nzHoverable [nzCover]="coverTemplate">
+  <nz-card-meta [nzTitle]="title" ></nz-card-meta>
+</nz-card>
+<ng-template #coverTemplate>
+  <img width="220px" height="260px" [alt]="cardItem.name" [src]="cardItemImage" />
+</ng-template>
+
+<ng-template #title>
+  <h3 class="title">{{cardItem.name}}</h3>
+</ng-template>

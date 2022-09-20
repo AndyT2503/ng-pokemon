@@ -1,0 +1,43 @@
+<div id="header">
+  <div routerLink="" class="nav-left">
+    <img
+      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png"
+      alt="logo"
+    />
+    <h2>Pokemon</h2>
+  </div>
+  <div class="nav-right">
+    <ul nz-menu nzMode="horizontal">
+      <li nz-submenu nzTitle="Games">
+        <ul>
+          <ng-container *ngFor="let item of (vm$ | async)!.gameVersions">
+            <li nz-menu-item>{{ item }}</li>
+          </ng-container>
+        </ul>
+      </li>
+      <li nz-submenu nzTitle="Generation">
+        <ul>
+          <ng-container *ngFor="let item of (vm$ | async)!.gameGenerations">
+            <li nz-menu-item>{{ item }}</li>
+          </ng-container>
+        </ul>
+      </li>
+      <li nz-menu-item>
+        <a
+          href="https://ng.ant.design"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Location</a
+        >
+      </li>
+      <li nz-menu-item>
+        <a
+          href="https://ng.ant.design"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Items</a
+        >
+      </li>
+    </ul>
+  </div>
+</div>

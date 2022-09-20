@@ -1,0 +1,17 @@
+.header {
+  margin: 16px 0;
+  input {
+    width: 300px;
+  }
+}
+
+.list-pokemon {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 16px;
+}
+
+nz-pagination {
+  text-align: end;
+  margin: 16px 0;
+}

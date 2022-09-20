@@ -1,0 +1,13 @@
+img {
+  object-fit: scale-down;
+}
+
+
+.title {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+:host::ng-deep .ant-card-body {
+  border-top: 1px solid #f0f0f0;
+}

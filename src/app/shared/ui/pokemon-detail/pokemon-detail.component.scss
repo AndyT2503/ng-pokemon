@@ -1,0 +1,26 @@
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.detail {
+  .name {
+    color: var(--primary-color);
+    text-align: center;
+  }
+
+  .detail-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+    margin-top: 8px;
+    .info {
+      display: flex;
+      gap: 8px;
+      justify-content: space-between;
+    }
+  }
+}

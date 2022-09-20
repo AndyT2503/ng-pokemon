@@ -1,0 +1,14 @@
+<div class="header">
+  <h2>Pokemons</h2>
+  <a routerLink="/pokemon-list">See more</a>
+</div>
+
+<div class="list-pokemon">
+  <ng-container *ngFor="let item of listPokemon">
+    <app-card
+      (onClick)="showDetail($event)"
+      [cardItem]="item"
+      [cardItemImage]="item | imageUrl: DATA_TYPE.Pokemon"
+    ></app-card>
+  </ng-container>
+</div>
